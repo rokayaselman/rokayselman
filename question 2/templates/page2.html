@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>صفحة 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ِزينب ورقي </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('page1') }}">page1</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">page2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- المحتوى -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>البايثون</h1>
+          <p>البايثون (Python) هي لغة برمجة عالية المستوى ومفتوحة المصدر، تم تطويرها في أوائل التسعينات من قبل جويدو فان روسوم (Guido van Rossum). تتميز البايثون بسهولة تعلمها واستخدامها، وتستخدم في العديد من المجالات مثل تطوير تطبيقات الويب والذكاء الاصطناعي وتحليل البيانات والألعاب والتطبيقات المحمولة وغيرها.
+
+يتميز البايثون بسهولة القراءة والكتابة، حيث تستخدم الأبواق (indentations) بدلاً من الأقواس لتنظيم الكود، مما يجعل الكود أكثر وضوحًا وسهولة في الفهم. كما يتميز البايثون بمكتباتها القوية والشاملة، التي تدعم العديد من المجالات والتي تسهل كثيرًا عملية التطوير.
+
+يتم تشغيل البايثون على مختلف المنصات بما في ذلك ويندوز ولينكس وماك، كما تتوفر العديد من الأدوات والمحررات المختلفة لتطوير التطبيقات باستخدام البايثون.
+
+يتم تعلم البايثون عادةً من خلال الدروس والكتب التعليمية والمشاريع العملية، وهناك العديد من المصادر المتاحة على الإنترنت لتعلم البايثون، بما في ذلك المواقع التعليمية والمنتديات والمجتمعات المختلفة.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

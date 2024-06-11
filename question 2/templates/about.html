@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>about</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ِزينب ورقي </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('page1') }}">page1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('page2') }}">page2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- المحتوى -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>معلومات عنا</h1>
+          <p>زهراء أنيس حبيب + رقي سميع سلمان</p>
+          <p>صممت هذا الموقع لحل السؤال الثاني في وظيفة برمجة الشبكات</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

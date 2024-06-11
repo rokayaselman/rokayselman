@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ِزينب ورقي </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">about</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('page1') }}">page1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('page2') }}">page2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- المحتوى -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>للتواصل</h1>
+          <p>البريد الالكتروني: x@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

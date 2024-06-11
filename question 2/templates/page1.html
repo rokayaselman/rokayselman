@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>صفحة 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ِزينب ورقي </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">الصفحة الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('page2') }}">page2</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">page1</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- المحتوى -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>لغات البرمجة</h1>
+          <p>هناك العديد من لغات البرمجة التي يمكن استخدامها لتطوير البرامج والتطبيقات والمواقع الإلكترونية. ومن بين هذه اللغات: 1- لغة البرمجة C: وهي لغة برمجة منخفضة المستوى، تستخدم في تطوير النظم والتطبيقات المتطلبة لسرعة وكفاءة عالية. 2- لغة البرمجة C++: تعتبر تطويرًا للغة C، وتستخدم في تطوير البرامج المعقدة والتطبيقات الكبيرة. 3- لغة البرمجة Java: تستخدم على نطاق واسع في تطوير تطبيقات الويب والأجهزة المحمولة، وتعمل على عدد كبير من المنصات. 4- لغة البرمجة Python: تستخدم في تطوير تطبيقات الويب والذكاء الاصطناعي والتعلم الآلي، وتتميز بسهولة التعلم</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
